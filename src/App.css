@@ -1,19 +1,4 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.todo-app {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -35,4 +20,53 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.todo-input{
+  width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition: width 0.4s ease-in-out;
+}
+
+.todo-input:focus {
+  width: 60%;
+}
+
+.form-input{
+  border: none;
+}
+
+.todo-button {
+  background-color: #093e5e;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.todo-button:hover {background-color: #0b2d44}
+
+.todo-button:active {
+  background-color: #1c5fb8;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.todo-list{
+  display: flex;  
+}
+
+.done-list.label{
+  text-decoration: line-through;
 }
